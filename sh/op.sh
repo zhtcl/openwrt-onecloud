@@ -9,7 +9,7 @@ function git_sparse_clone() {
   cd .. && rm -rf $repodir
 }
 
-echo 'src-git xd https://github.com/shiyu1314/openwrt-packages' >>feeds.conf.default
+echo 'src-git xd https://github.com/zhtcl/onecloud-packages' >>feeds.conf.default
 echo 'src-git mihomo https://github.com/morytyann/OpenWrt-mihomo' >>feeds.conf.default
 
 git_sparse_clone $REPO_BRANCH https://github.com/immortalwrt/immortalwrt package/emortal
