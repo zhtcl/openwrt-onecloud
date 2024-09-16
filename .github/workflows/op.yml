@@ -149,6 +149,12 @@ jobs:
         CONFIG_PACKAGE_ip-full=y
         CONFIG_PACKAGE_kmod-tun=y
         CONFIG_PACKAGE_zram-swap=y
+        CONFIG_PACKAGE_acme=y
+        CONFIG_PACKAGE_alist=y
+        CONFIG_PACKAGE_vlmcsd=y
+        CONFIG_PACKAGE_UnblockNeteaseMusic=y
+        CONFIG_PACKAGE_kmod-usb-printer=y
+        CONFIG_PACKAGE_kmod-usb2=y
         EOF
         
         if [[ "${{ matrix.repo_info.repo_url }}" == "https://github.com/openwrt/openwrt" ]]; then
