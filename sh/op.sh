@@ -24,7 +24,9 @@ git clone -b master --depth 1 --single-branch https://github.com/jerrykuku/luci-
 git clone -b main --depth 1 --single-branch https://github.com/shiyu1314/homeproxy package/luci-app-homeproxy
 git clone -b master --depth 1 --single-branch https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 git clone -b v5-lua --depth 1 --single-branch https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
-
+git clone https://github.com/sbwml/luci-app-alist package/new/alist
+rm -rf package/new/alist/luci-app-alist
+git clone https://github.com/sbwml/luci-app-alist package/new/alist/luci-app-alist -b lua --depth=1
 
 curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turboacc.sh -o add_turboacc.sh && bash add_turboacc.sh
 ./scripts/feeds update -a
